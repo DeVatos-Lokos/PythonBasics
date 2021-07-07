@@ -112,7 +112,7 @@ class TestTiposDeDatos(unittest.TestCase):
 
     def test_regresa_una_lista(self):
         self.assertTrue(
-            self.tipos_de_datos.es_lista(
+            self.tipos_de_datos.es_list(
                 self.tipos_de_datos.regresa_una_lista()
             )
         )
@@ -141,7 +141,7 @@ class TestTiposDeDatos(unittest.TestCase):
 
     def test_int_to_float(self):
         r = random.randint(-100, 100)
-        self.assertEquals(
+        self.assertEqual(
             float(r), 
             self.tipos_de_datos.int_to_float(r)
         )
@@ -149,7 +149,7 @@ class TestTiposDeDatos(unittest.TestCase):
     def test_float_to_int(self):
         r = random.randint(-100, 100)
         r_f = random.randint(1, 100) / 100
-        self.assertEquals(
+        self.assertEqual(
             int(r + r_f), 
             self.tipos_de_datos.float_to_int(r + r_f)
         )

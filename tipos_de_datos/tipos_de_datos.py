@@ -41,26 +41,26 @@ class TiposDeDatos:
         El tipo boolean puede ser vedadero (True) o falso (False), este méetodo,
         nos regresará True si es boolean y false, si no lo es
         """
-        pass # Borra pass y aquí escribe tú código
+        return type(self.tipo_bool) == type(recibimos) 
 
     def es_int(self, recibimos): # Ejercicio
         """
         EL tipo de dato int, es un número entero, puede ser negativo o positivo
         """
-        pass # Borra pass y aquí escribe tú código
+        return type(self.tipo_int) == type(recibimos)
 
     def es_float(self, recibimos): # Ejercicio
         """
         El tipo de dato float es un número décimal
         """
-        pass # Borra pass y aquí escribe tú código
+        return type(self.tipo_float) == type(recibimos)
 
     def es_byte(self, recibimos): # Ejercicio
         """
         El tipo de dato byte es una cadena de bytes, es el tipo más básico en cualquier lenguaje de programación,
         todos los demás tipos de datos pueden transformarse en este
         """
-        pass # Borra pass y aquí escribe tú código
+        return type(self.tipo_byte) == type(recibimos)
 
     def es_list(self, recibimos):
         """
@@ -69,29 +69,29 @@ class TiposDeDatos:
         Es una estructura de datos, la más básica de todas y probablemente la que más usaran,
         en python un String es, d hecho una lista de carácteres.
         """
-        pass # Borra pass y aquí escribe tú código
+        return type(self.tipo_list) == type(recibimos)
 
     # DECLARACIÓN DE VARIABLES Y ASIGNACIONES
     def regresa_un_string(self): # Ejemplo
         return "Hola mundo"
 
     def regresa_un_boolean(self):
-        return # Completa
+        return True
 
     def regresa_un_int(self):
-        return # Completa
+        return 1
 
     def regresa_un_float(self):
-        return # Completa
+        return 1.0
 
     def regresa_un_byte(self):
-        return # Completa
+        return b""
 
     def regresa_una_lista(self):
-        return # Completa
+        return []
 
     def regresa_una_lista_de_longitud_10(self):
-        return # Completa
+        return [i for i in range(10)]
 
     # CONVERSIONES DE DATOS
     def to_string(self, recibimos): #Ejemplo
@@ -109,11 +109,11 @@ class TiposDeDatos:
         La conversión de un entero a float solo agrega decimales al entero, 0 se convierte en 0.0,
         1 en 1.0 y así sucesivamente
         """
-        pass # Borra pass y aquí escribe tú código
+        return float(recibimos)
 
     def float_to_int(self, recibimos):
         """
         La conversión de float a entero le quita decimales, se pierde información, un 3.9, se convierte en 3,
         3.1 en 3.
         """
-        pass # Borra pass y aquí escribe tú código
+        return int(recibimos)
