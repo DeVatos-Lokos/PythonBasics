@@ -1,5 +1,7 @@
 # PythonBasics
 
+Crear una rama con nombre y apellido, p.ej ivanpineda y subir el ejercicio en su rama específica.
+
 Instrucciones:
 
 1. Moverse a la carpeta tipos_de_datos.
