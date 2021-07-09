@@ -41,7 +41,9 @@ class Semaforo:
         """
         Debe regresar "avanza" si el color es verde, y "no avanza" si es amarillo o rojo
         """
-        pass
+        if color == "verde":
+            return "avanza"
+        return "no avanza"
 
 class Pastel:
     def __init__(self):
@@ -53,20 +55,24 @@ class Pastel:
         igual que la cantidad de comensales, si es menor regresará
         "insuficiente"
         """
-        pass
+        if cantidad_rebanadas >= cantidad_comensales:
+            return "suficiente"
+        return "insuficiente"
 
     def diferencia(self, cantidad_rebanadas, cantidad_comensales):
         """
         Debe regresar el valor absoluto de la diferencia entre cantidad_rebanadas
         y cantidad_comensales
         """
-        pass
+        return abs(cantidad_rebanadas - cantidad_comensales)
 
     def es_de_chocolate(self, sabor):
         """
         Debe regresar "si" si el sabor es "chocolate", "no" si no lo es
         """
-        pass
+        if sabor == "chocolate":
+            return "si"
+        return "no"
 
 class Futbol:
     def __init__(self):
@@ -77,4 +83,6 @@ class Futbol:
         Debe regresar "valido" si tiene 11 jugadores,
         de lo contrario regresara no valido
         """
-        pass
+        if cantidad_jugadores == 11:
+            return "valido"
+        return "no valido"
