@@ -5,7 +5,7 @@ from loops import NaturalNumbers
 class TestNaturalNumbers(unittest.TestCase):
 
     def setUp(self):
-        self.n = random.randint(0, 50)
+        self.n = random.randint(1, 50)
         self.natural_numbers = NaturalNumbers()
 
     def test_get_first_n_for(self):

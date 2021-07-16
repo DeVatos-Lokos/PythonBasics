@@ -24,29 +24,29 @@ class NaturalNumbers:
         print(f"FIRST n (n={n}) WHILE: {first_n}")
         return first_n
 
-    def get_first_n_pair_for(self, n):
+    def get_first_n_pair_for(self, n): # Ejercicio
         """
         Obtener los primeros n pares en una lista con for
         """
-        return [i for i in range(0, n, 2)]
+        return []
 
-    def get_first_n_pair_while(self, n):
+    def get_first_n_pair_while(self, n): # Ejercicio
         """
         Obtener los primeros n pares en una lista con while
         """
-        return [i for i in range(0, n, 2)]
+        return []
 
-    def get_factorial_for(self, n):
+    def get_factorial_for(self, n): # Ejercicio
         """
         Obtener el factorial de n con for, regresa un int
         """
-        return self.get_factorial_recursive(n)
+        return 0
 
-    def get_factorial_while(self, n):
+    def get_factorial_while(self, n): # Ejercicio
         """
         Obtener el factorial de n con while, regresa un int
         """
-        return self.get_factorial_recursive(n)
+        return 0
 
     def get_factorial_recursive(self, n): #Ejemplo
         """
@@ -56,7 +56,7 @@ class NaturalNumbers:
             return 1
         return n * self.get_factorial_recursive(n-1)
 
-    def get_n_pow_2_for(self, n):
+    def get_n_pow_2_for(self, n): # Ejemplo
         """
         Obtener el cuadrado de los primeros n con for, regresa una lista
         """
@@ -68,11 +68,11 @@ class NaturalNumbers:
         print(f"FIRST n (n={n}) POW 2: {n_pow_2}")
         return n_pow_2
 
-    def get_n_pow_2_while(self, n):
+    def get_n_pow_2_while(self, n): # Ejercicio
         """
         Obtener el cuadrado de los primeros n con while, regresa una lista
         """
-        return self.get_n_pow_2_for(n)
+        return []
 
     def get_n_sum_recursive(self, n): #Ejemplo
         """
@@ -82,14 +82,14 @@ class NaturalNumbers:
             return 0
         return n + self.get_n_sum_recursive(n-1)
 
-    def get_n_sum_for(self, n):
+    def get_n_sum_for(self, n): # Ejercicio
         """
         Obtener la suma de los primeros n con for, regresa un int
         """
-        return self.get_n_sum_recursive(n)
+        return 0
 
-    def get_n_sum_while(self, n):
+    def get_n_sum_while(self, n): # Ejercicio
         """
         Obtener la suma de los primeros n con while, regresa un int
         """
-        return self.get_n_sum_recursive(n)
+        return 0
