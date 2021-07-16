@@ -2,7 +2,7 @@ import unittest
 import random
 from loops import NaturalNumbers
 
-class NaturalNumbers:
+class TestNaturalNumbers(unittest.TestCase):
 
     def setUp(self):
         self.n = random.randint(0, 50)
@@ -39,13 +39,13 @@ class NaturalNumbers:
     def test_get_factorial_for(self):
         self.assertEqual(
             self.natural_numbers.get_factorial_recursive(self.n),
-            self.natural_numbers.get_first_n_pair_for(self.n)
+            self.natural_numbers.get_factorial_for(self.n)
         )
 
     def test_get_factorial_while(self):
         self.assertEqual(
             self.natural_numbers.get_factorial_recursive(self.n),
-            self.natural_numbers.get_first_n_pair_while(self.n)
+            self.natural_numbers.get_factorial_while(self.n)
         )
 
     def test_get_n_pow_2_for(self):
