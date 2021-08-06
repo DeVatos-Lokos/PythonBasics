@@ -28,26 +28,46 @@ class NaturalNumbers:
         """
         Obtener los primeros n pares en una lista con for
         """
-        return []
-
+        first_n = []
+        for i in range(0,n,2):
+            first_n.append(i)
+        print(first_n)
+        return first_n
+    
     def get_first_n_pair_while(self, n): # Ejercicio
         """
         Obtener los primeros n pares en una lista con while
         """
-        return []
+        lista =[]
+        n_count = 0
+        while n_count < n:
+            lista.append(n_count)
+            n_count += 2
+        print(lista)
+        return lista
 
     def get_factorial_for(self, n): # Ejercicio
         """
         Obtener el factorial de n con for, regresa un int
         """
-        return 0
+        factorial = 1
+        for i in range(1,n+1):
+            factorial *= i
+        return factorial
+
+
 
     def get_factorial_while(self, n): # Ejercicio
         """
         Obtener el factorial de n con while, regresa un int
         """
-        return 0
-
+        factorial = 1
+        i = 1
+        while i <=n:
+            factorial = factorial * i
+            i += 1
+        return factorial
+            
     def get_factorial_recursive(self, n): #Ejemplo
         """
         Obtener el factorial de n recursivamente, regresa un int
@@ -72,7 +92,14 @@ class NaturalNumbers:
         """
         Obtener el cuadrado de los primeros n con while, regresa una lista
         """
-        return []
+        lista = []
+        n_count = 0
+        while n_count < n:
+            lista.append(n_count**2)
+            n_count += 1
+        return lista
+
+
 
     def get_n_sum_recursive(self, n): #Ejemplo
         """
@@ -86,10 +113,19 @@ class NaturalNumbers:
         """
         Obtener la suma de los primeros n con for, regresa un int
         """
-        return 0
+        n_sum = 0
+        for i in range(0,n+1):
+            n_sum = n_sum + i
+        return n_sum
 
+            
     def get_n_sum_while(self, n): # Ejercicio
         """
         Obtener la suma de los primeros n con while, regresa un int
         """
-        return 0
+        n_sum = 0
+        i = 1
+        while i <= n:
+            n_sum = n_sum + i
+            i += 1
+        return n_sum

@@ -19,7 +19,7 @@ class Ropa:
         Este ejemplo es equivalente (esto quiere decir que para
         la misma entrada dará el mismo resultado) a la función
         tender, solo que usamos la negación != que significa 
-        es distinto de, contrario a == que significa que es igual a
+        es distinto de, contrario a == que sinifica que es igual a
         """
         if clima != "lluvia":
             return "tiendo" # El return corta el flujo ya no se ocupa else
